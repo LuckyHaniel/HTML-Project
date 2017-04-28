@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<link href="../css/menu2.css" rel="stylesheet" type="text/css">
+
+<title>火爆资讯</title>
+<style type="text/css">
+body,div,h1,h2,h3,h4,h5,form,img,ul,ol,li,dl,dd,p{margin:0;padding:0}
+li{list-style-type:none}
+ul{list-style:none}
+a img{border:0}
+.clearfix{zoom:1}
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden}
+.fl{float:left}
+.fr{float:right}
+.dn{display:none !important}
+.tal{text-align:left !important}
+.tac{text-align:center !important}
+.tar{text-align:right !important}
+.fwb{font-weight:bold}
+em{font-style:normal}
+a{color:#226977;text-decoration:none;hide-focus:expression(this.hideFocus=true);outline:none}
+a:hover{text-decoration:underline}
+.hide{width:0;height:0;display:block;text-indent:-9999px;overflow:hidden}
+table{border-collapse:collapse;border-spacing:0}
+
+body{background:#000;color:#226977;font:12px/1.5 tahoma,microsoft yahei, '\5b8b\4f53', sans-serif;min-width:1000px;padding-top:42px}
+.wrapper{background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/bg_wrap.jpg) no-repeat 50% 0;position:relative}
+
+.header, .main{width:1000px;margin:0 auto}
+.header{background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/bg_header.jpg) no-repeat 50% 0;height:550px;position:relative;_overflow:hidden}
+.main{background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/bg_main.jpg) no-repeat 50% 0;padding-top:15px;height:1130px}
+
+
+.spr{background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/sp.png) no-repeat 0 -9999px}
+.ofh{overflow:hidden;text-indent:-9999px}
+
+.logo{width:195px;height:120px;display:block;position:absolute;top:20px;left:0;text-indent:-9999px}
+.bt_view{
+	display: block;
+	width: 192px;
+	height: 50px;
+	background-position: 0 0;
+	position: absolute;
+	top: 368px;
+	left: 75px
+}
+
+.login{color:#226977;font-size:14px;text-align:center;padding-top:10px;height:20px;line-height:20px}
+.login a{text-decoration:underline}
+.login span{color:#80e3ed}
+
+.mission{padding-left:76px;height:350px}
+.mission a:hover{text-decoration:none}
+.mission dl{width:160px;text-align:center;margin:20px 30px 0;float:left;_display:inline;_overflow:hidden;padding:35px 30px 0;height:215px;background-position:0 -53px;position:relative}
+.mission dt{font:800 32px/36px Microsoft Yahei;color:#33717b;height:43px}
+.mission .tip{color:#93743d;font-size:14px;height:20px}
+.mission .tip b{color:#fbd593;margin:0 3px}
+.mission .dj{width:140px;margin:10px auto 0;height:42px;position:relative}
+.mission .dj .img{float:left;width:42px;height:42px;background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/pic.png) no-repeat}
+.mission .dj .img_1{background-position:0 0}
+.mission .dj .img_2{background-position:-42px 0}
+.mission .dj .img_3{background-position:-84px 0}
+.mission .dj p{margin-left:52px;padding-top:4px;text-align:left}
+.mission .dj .i_prize{position:absolute;display:block;width:19px;height:22px;background-position:-200px 0;top:-2px;left:22px}
+.mission .l_progress{height:6px;overflow:hidden;width:120px;background:#05393f;border-radius:3px;margin:12px auto 5px auto}
+.mission .l_progress span{height:6px;overflow:hidden;display:block;background:#3ecfe6;border-radius:3px}
+.mission .t_progress b{color:#45a0b2}
+.mission .bt{display:block;margin:0 auto;width:154px;height:36px;line-height:36px;color:#fff;font-size:14px;text-align:center;margin-top:10px}
+.mission .bt_lq{background-position:0 -357px}
+.mission .bt_jxz{background-position:-343px -357px;cursor:default}
+.mission .bt_ylq{background-position:-172px -357px;cursor:default;color:#909090}
+.mission dl.hover{background-position:-223px -53px}
+.mission .finish_dd{width:112px;height:102px;background-position:0 -415px;position:absolute;top:58px;left:53px;display:none}
+.mission .finish,.mission .finish dt,.mission .finish .tip,.mission .finish .tip b,.mission .finish .t_progress b{color:#13191d}
+.mission .finish .bt{display:none}
+.mission .finish .finish_dd{display:block}
+.mission .finish .dj .i_prize{background-position:-230px 0}
+.mission .finish .dj .img_1{background-position:0 -42px}
+.mission .finish .dj .img_2{background-position:-42px -42px}
+.mission .finish .dj .img_3{background-position:-84px -42px}
+.mission .finish .l_progress{background:#0a0e11}
+.mission .finish .l_progress span{background:#262b2e}
+
+.mission_finished{padding:80px 0 0 270px;height:270px}
+.mission_finished dt{float:left;width:105px;height:105px;background-position:-117px -407px}
+.mission_finished dd{margin-left:120px;font:26px/30px Microsoft Yahei;color:#64ffff;padding-top:6px}
+.mission_finished dd strong{font-size:48px;line-height:56px}
+
+.raiders h4{text-align:center;font-size:22px;color:#d6bb8a}
+.raiders ul{height:141px;width:900px;margin:35px auto 0}
+.raiders li{float:left;width:90px;height:141px;text-align:center;position:relative}
+.raiders li span,.raiders li b,.raiders a{display:block}
+.raiders a:hover{text-decoration:none}
+.raiders .pic{width:90px;height:141px;background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/bg_gl_1.jpg) no-repeat}
+.raiders .pic_1{background-position:0 -141px}
+.raiders .pic_2{background-position:-90px -141px}
+.raiders .pic_3{background-position:-180px -141px}
+.raiders .pic_4{background-position:-270px -141px}
+.raiders .pic_5{background-position:-360px -141px}
+.raiders .pic_6{background-position:-450px -141px}
+.raiders .pic_7{background-position:-540px -141px}
+.raiders .pic_8{background-position:-630px -141px}
+.raiders .pic_9{background-position:-720px -141px}
+.raiders .pic_10{background-position:-810px -141px}
+.raiders a:hover .pic_1{background-position:0 0}
+.raiders a:hover .pic_2{background-position:-90px 0}
+.raiders a:hover .pic_3{background-position:-180px 0}
+.raiders a:hover .pic_4{background-position:-270px 0}
+.raiders a:hover .pic_5{background-position:-360px 0}
+.raiders a:hover .pic_6{background-position:-450px 0}
+.raiders a:hover .pic_7{background-position:-540px 0}
+.raiders a:hover .pic_8{background-position:-630px 0}
+.raiders a:hover .pic_9{background-position:-720px 0}
+.raiders a:hover .pic_10{background-position:-810px 0}
+.raiders .text{width:90px;position:absolute;bottom:10px;left:0;font-size:14px;color:#6297a2}
+.raiders .text b{font:800 18px/20px Microsoft Yahei;color:#f1e0a4}
+
+.faq{font-size:14px;margin:60px auto 0;width:880px;color:#3d8b9b}
+.faq h4{text-align:center;font-size:22px;color:#d6bb8a}
+.faq dt{font-size:14px;color:#f1e0a4;font-weight:800}
+.faq dl{margin-bottom:20px}
+
+.pop{background:#0f0f0f;width:725px;padding-top:20px}
+.pop:focus{outline:none}
+.pop .con{padding:20px 0}
+.pop table{width:700px;margin:0 auto;color:#adadad}
+.pop table th{font-size:14px;padding:10px 0;background:#2c231f}
+.pop table td{font-size:12px;height:50px;border-bottom:1px dashed #2c231f;text-align:center}
+.pop .page{font-size:12px;text-align:right;padding:20px 15px 0 15px;color:#adadad}
+.pop .page a{margin:0 10px;color:#226977}
+.pop .page input{width:50px;border:none;height:22px;line-height:22px;text-align:center}
+.pop .close{display:block;width:60px;height:60px;background-position:-270px -370px;position:absolute;right:-70px;top:60px}
+.pop .record_tit{height:22px;padding:20px 0 0 290px;color:#adadad;font-weight:normal;display:block;overflow:hidden;background:url(http://ossweb-img.qq.com/images/lol/act/a20141203greenhand/tit.png) no-repeat;margin-left:20px}
+
+.pop2{border:7px solid #329aa9;width:440px;height:230px;background:#000;text-align:center;font-family:Microsoft Yahei}
+.pop2 .close{display:block;width:54px;height:53px;background-position:-330px -370px;position:absolute;right:-7px;top:-7px}
+.pop2 .con{padding-top:50px}
+.pop2 .ptip{font-size:24px;color:#fff}
+.pop2 .pname{color:#fff;font-size:16px;padding:0 30px;height:80px}
+.pop2 .btn{display:block;width:116px;height:43px;background:#329aa9;margin:20px auto 0 auto;text-align:center;color:#fff;border-radius:3px;font:400 16px/43px Microsoft Yahei}
+.pop2 .btn:hover{text-decoration:none}
+
+.bt_close{width:36px;height:36px;color:#329aa9;display: block;font:800 36px/36px sinsum;position:absolute;right:10px;top:20px}
+.bt_close:hover{text-decoration:none;color:#64ffff}
+.pop2 .bt_close{top:5px;right:5px}
+
+/* Footer Style Start */
+#footer_ied{background:none;padding:30px 0;color:#226977;text-align:center;line-height:19px;font-family:Tahoma;font-size:12px}
+#footer_ied .wrap_ied{width:1000px;margin:0 auto}
+#footer_ied p.e{font-size:10px}
+#footer_ied a{color:#226977;text-decoration:none}
+#footer_ied a:hover{color:#226977;text-decoration:underline}
+</style>
+</head>
+<body>
+<div id="nav">
+<ul>
+	<li><a href="../index.html">首页</a></li>
+	<li><a href="index.html">游戏介绍</a></li>
+	<ul>
+		<li><a href="#">???</a></li>
+		<li><a href="#">???</a></li>
+		<li><a href="#">???</a></li>
+	</ul>
+	<li><a href="#">每日一笑</a></li>
+	<li><a href="hbzx.html">火爆资讯</a></li>
+	<li><a href="#">精美壁纸</a></li>
+	<li><a href="#">官方活动</a></li>
+	<li><a href="wjq.html">关于我们</a></li>
+	<li><a href="表单.html">投稿&&注册</a></li>
+</ul>
+</div>
+<div class="header">
+</div>
+  <div class="main">
+
+		<div class="mission">
+		  <dl class="spr active" id="task_0">
+				<dt id="task_name_0"></dt>
+			<dd>
+			  <p class="tip" id="task_desc_0">&nbsp;</p>
+			</dd>
+</dl>	  
+			<dl class="spr active" id="task_2">
+<dt id="task_name_2"></dt>
+			  <dd>
+			    <p class="tip"><a href="#" title="壁纸墙" class="spr bt bt_lq" id="getgoods_3" style="display:block" href="#">壁纸墙</a></p>
+			    <p class="tip">&nbsp;</p>
+			    <p class="tip">&nbsp;</p>
+			    <p class="tip">&nbsp;</p>
+			    <p class="tip">&nbsp;</p>
+			    <p class="tip">&nbsp;</p>
+			    <p class="tip"><a id="getgoods_2" href="#" class="spr bt bt_lq" title="视频站" style="display:block" href="spj.html">视频站</a> </p>
+                
+      <dl class="spr active">
+		    <dd class="spr finish_dd"></dd>
+			<dd>
+			  <p class="tip" id="task_desc_0">&nbsp;</p>
+			</dd>
+</dl>          
+</body>
+</html>
